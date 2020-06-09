@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">WakeApp</string>
+    <string name="image">Image</string>
+    <string name="swap_left_instruction">Przesuń w lewo, aby kontynuować</string>
+    <string name="swap_right_instruction">Przesuń w prawo, aby kontynuować</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Zaloguj</string>
+    <string name="Wifi_polacz">Połącz</string>
+    <string name="password">Hasło</string>
+    <string name="e_mail">Email</string>
+    <string name="register">Rejestracja</string>
+    <string name="re_type_password">Powtórz</string>
+    <string name="your_name">Nazwa</string>
+    <string name="start">Zaczynamy</string>
+    <string name="groupName">Nazwa grupy</string>
+    <string name="deviceName">Nazwa urzadzenia</string>
+    <string name="wifiName">Nazwa sieci (SSID)</string>
+    <string name="QRScan">Twoj telefon</string>
+    <string name="Off">Wyłącz</string>
+    <string name="Alarm_on">Alarm uruchomiony</string>
+
+    <string name="Alarm_title">Dodaj alarm</string>
+    <string name="Device_title">Nowe urządzenie</string>
+
+
+    <!-- TODO: GROUP REGISTRATION -->
+    <string name="group_lvl">Grupa</string>
+    <string name="add_bt">Dane WiFi</string>
+    <string name="tag">Zaloguj się poniżej\nlub zarejestruj nową rodzinę</string>
+    <string name="tag_wifi">Wprowadź nazwę sieci WiFi i hasło.</string>
+    <string name="swipe_left_for_register">Przesuń w lewo, aby zarejestrować grupę</string>
+    <string name="swipe_right_for_login">Przesuń w prawo, aby cofnąć do logowania</string>
+
+    <string-array name="fragment_1_3_1">
+        <item>Pobudka!</item>
+        <item>Bądź obudzony</item>
+        <item>Dzięki studentom PJATK</item>
+        <item>Już niezaśpisz</item>
+    </string-array>
+
+    <string-array name="fragment_1_3_2">
+        <item>Nie należysz do żadnej grupy</item>
+        <item>Zarejestruj swoją grupę</item>
+        <item>lub dołącz do już istniejącej</item>
+    </string-array>
+
+    <!-- TODO: USER REGISTRATION -->
+    <string name="user_lvl">Użytkownik</string>
+    <string name="user_swipe_left_for_register">Przesuń w lewo, aby zarejestrować użtykownika</string>
+    <string name="user_tag">Zaloguj się poniżej\nlub zarejestruj nowego użytkownika</string>
+
+    <string-array name="fragment_2_3_2">
+        <item>Dołącz do nas</item>
+        <item>Zaloguj się</item>
+        <item>lub załóż nowe konto</item>
+    </string-array>
+
+    <!-- TODO: USER REGISTRATION -->
+    <string-array name="fragment_3_3_2">
+        <item>Dodaj to urządzenie</item>
+        <item>aby dodwać budziki</item>
+        <item>lub pomić ten krok</item>
+    </string-array>
+
+    <!-- TODO: MAIN -->
+    <string name="main_Data">Sobota, 31 marzec 2020</string>
+    <string name="wrong_validation_login">Nieprawidłowy login lub hasło</string>
+    <string name="btn_txt_confnij">Cofnij</string>
+    <string name="btn_logout">Wyloguj</string>
+    <string name="sets_ustawienia_konta">Ustawienia konta</string>
+    <string name="sets_nazwa_u_ytkownika">Nazwa użytkownika</string>
+    <string name="sets_adres_email">Adres email</string>
+    <string name="sets_numer_relefonu">Rola</string>
+    <string name="sets_nazwa_grupy">Nazwa grupy</string>
+</resources>

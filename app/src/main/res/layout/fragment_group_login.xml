@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".group_log_reg.groupLoginFragment"
+    android:background="@drawable/bakground_gradient"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+    <ImageView
+        android:contentDescription="@string/image"
+        android:id="@+id/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:alpha="0.1"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/group_lvl"
+        android:textSize="50sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/tv_title"
+        android:textColor="@color/colorWhite"
+        android:drawableStart="@drawable/ic_group_black_48dp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="50sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/tv_subtitle"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tag"
+        android:textSize="17sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@id/et_login"/>
+
+    <EditText
+        android:autofillHints="Nawa użytwkonika"
+        android:id="@+id/et_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/groupName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:inputType="textEmailAddress"
+        android:layout_above="@id/et_password"
+        android:background="@drawable/edittext_layout"
+        android:textSize="15sp" />
+
+    <EditText
+        android:autofillHints="Password"
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edittext_layout"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/valid_logon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/wrong_validation_login"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:layout_below="@id/et_password"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valid_logon"
+        android:background="@drawable/button_gradient"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/login"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@id/swipeRight"
+        android:layout_alignStart="@+id/swipeRight"
+        android:layout_alignEnd="@+id/swipeRight"
+        android:background="@drawable/button_gradient"
+        android:text=">>" />
+
+    <TextView
+        android:id="@+id/swipeRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/swipe_left_for_register"
+        android:textSize="15sp"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

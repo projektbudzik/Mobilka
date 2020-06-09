@@ -1,0 +1,39 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="first_preferencescreen">
+
+    <PreferenceCategory android:title="Inormacje o koncie">
+        <Preference
+            android:key="nameKey"
+            android:title="Autor: @S15585"
+            />
+        <Preference
+            android:key="emailKey"
+            android:title="Autor: @S15585"
+            />
+        <Preference
+            android:key="numberKey"
+            android:title="Autor: @S15585"
+            />
+        <Preference
+            android:key="groupKey"
+            android:title="Autor: @S15585"
+            />
+        <Preference
+            android:key="groupKey"
+            android:title="Autor: @S15585"
+            />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Opcje">
+        <Preference
+            android:key="groupKey"
+            android:title="Resetuj Hasło"
+            />
+        <Preference
+            android:key="groupKey"
+            android:title="Wyloguj"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

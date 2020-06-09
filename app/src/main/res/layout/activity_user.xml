@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Model.UserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:background="@drawable/bakground_gradient"
+            android:id="@+id/Relative1">
+            <TextView
+                android:id="@+id/tv_logo"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_person_white_24dp"
+                android:text="Zarządzanie użytkownikami"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+            <ListView
+                android:layout_below="@id/Relative1"
+                android:id="@+id/list_alarm"
+                android:layout_above="@id/LinearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_margin="11dp"
+                android:textSize="16sp"
+                android:background="@drawable/button_gradient2_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cofnij" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</RelativeLayout>

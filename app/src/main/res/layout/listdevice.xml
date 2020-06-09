@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/Logo_dev">
+
+            <TextView
+                android:drawableTop="@drawable/ic_dashboard_black_24dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvID"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="(256)"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/Logo_dev">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nazwa:"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Użytkownik1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Typ:"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/tvDeviceType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telefon"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Numer:"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/tvMac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+48606598741"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Właściciel:"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:id="@+id/tvOwner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marcinek"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true">
+
+            <Button
+                android:layout_height="35dp"
+                android:layout_width="95dp"
+                android:id="@+id/usunDevice"
+                android:background="@drawable/button_gradient2_red"
+                android:textColor="@color/colorWhite"
+                android:text="Usuń"/>
+
+            <Button
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="95dp"
+                android:id="@+id/confWIF"
+                android:background="@drawable/button_gradient2_yellow"
+                android:textColor="@color/colorBlack"
+                android:text="Ustaw WIFI"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

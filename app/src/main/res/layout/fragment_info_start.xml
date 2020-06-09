@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".info_log_reg.infoStartFragment"
+    android:background="@drawable/bakground_gradient">
+
+
+    <ImageView
+        android:contentDescription="@string/image"
+        android:id="@+id/Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:alpha="0.1"
+        android:src="@drawable/logo"
+        />
+
+    <ImageView
+        android:contentDescription="@string/image"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/start_num"
+        android:layout_alignEnd="@+id/start_num"
+        android:layout_above="@id/start_num"
+        android:src="@drawable/ic_dashboard_white_24dp" />
+
+    <TextView
+        android:id="@+id/start_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start_title"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="10dp"
+        android:text="Urzadzenie"
+        android:textColor="@color/colorWhite"
+        android:textSize="54sp" />
+
+    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/start_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorWhite"
+        app:texts="@array/fragment_3_3_2"
+        app:timeout="600" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@id/swipeRight"
+        android:layout_alignStart="@+id/swipeRight"
+        android:layout_alignEnd="@+id/swipeRight"
+        android:background="@drawable/button_gradient"
+        android:text=">>" />
+
+    <TextView
+        android:id="@+id/swipeRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/swap_left_instruction"
+        android:textSize="15sp"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alarm.Model.AlarmActivity"
+    android:background="@drawable/bakground_gradient"
+    android:clickable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Device_title"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/colorWhite"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_title"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Nazwa"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/deviceName"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:autofillHints="Nawa użytwkonika"
+                android:id="@+id/et_deviceName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/deviceName"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:layout_below="@id/deviceName"
+                android:background="@drawable/edittext_layout"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_below="@id/et_deviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Typ urzadzenia"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/deviceTyp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+
+            <RadioGroup
+                android:id="@+id/radioDevice"
+                android:layout_below="@id/deviceTyp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioTelefon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telefon"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioArduino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budzik WakeApp Arduino" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_below="@id/radioDevice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:enabled="false"
+
+                android:text="Numer telefonu"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/deviceMAC"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:autofillHints="Nawa użytwkonika"
+                android:id="@+id/et_deviceMAC"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Numer telefonu"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="15dp"
+                android:inputType="textEmailAddress"
+                android:layout_below="@id/deviceMAC"
+                android:background="@drawable/edittext_layout"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_below="@id/et_deviceMAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Użytkownik"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/deviceUser"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <Button
+                android:id="@+id/btn_dodaj_device"
+                android:layout_margin="11dp"
+                android:textSize="16sp"
+                android:layout_below="@id/listUser"
+                android:background="@drawable/button_gradient2_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:text="Dodaj"
+
+                />
+
+            <ListView
+
+                android:background="@drawable/edittext_layout"
+                android:layout_below="@id/deviceUser"
+                android:layout_width="match_parent"
+                android:id="@+id/listUser"
+                android:choiceMode="singleChoice"
+                android:layout_height="160dp"/>
+
+            <Button
+                android:layout_below="@id/btn_dodaj_device"
+                android:id="@+id/btn_cofnij"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_gradient2_yellow"
+                android:text="Wróć"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container_deviceMAC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</RelativeLayout>

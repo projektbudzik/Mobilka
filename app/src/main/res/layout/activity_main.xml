@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bakground_gradient" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+           >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Witaj,"
+                android:textSize="28sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_above="@id/Lin1"
+                android:textColor="@color/colorWhite" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/Lin1">
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tv_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_Data"
+                        android:textSize="17sp"
+                        android:textColor="@color/colorWhite"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:id="@+id/setNumber"
+                        android:visibility="gone"
+                        android:background="@drawable/button_gradient2_yellow"
+                        android:text="Ustaw"
+                        android:textSize="10sp"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+        >
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:id="@+id/btn_alarm_mgmt"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="Alarmy"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/ic_access_alarm_black_24dp"
+                android:background="@drawable/button_gradient"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+           >
+
+            <Button
+                android:id="@+id/btn_divice_mgmt"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:textSize="12sp"
+                android:text="Urządzenia"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/ic_dashboard_black_24dp"
+                android:background="@drawable/button_gradient"  />
+            <Button
+                android:id="@+id/btn_user_mgmt"
+                android:layout_margin="5dp"
+                android:textSize="12sp"
+                android:padding="0dp"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="Użytkownicy"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/ic_group_white_48dp"
+                android:background="@drawable/button_gradient" />
+
+            <Button
+                android:id="@+id/btn_konto"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:text="Ustawienia konta"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/ic_settings_black_24dp"
+                android:background="@drawable/button_gradient" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="22dp"
+            android:paddingTop="8dp"
+            android:paddingRight="22dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+           >
+            <ImageView
+                android:contentDescription="@string/image"
+                android:id="@+id/Logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.1"
+                android:src="@drawable/logo"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+<!--    <Button-->
+<!--        android:id="@+id/btn_logout"-->
+<!--        android:layout_marginBottom="11dp"-->
+<!--        android:layout_marginLeft="22dp"-->
+<!--        android:layout_marginRight="22dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="38dp"-->
+<!--        android:text="Wyloguj"-->
+<!--        android:textColor="@color/colorWhite"-->
+<!--        android:layout_above="@id/btn_close"-->
+<!--        android:background="@drawable/button_gradient2_yellow" />-->
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Zamknij"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_gradient2_red" />
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Alarm.Model.AlarmActivity"
+    android:background="@drawable/bakground_gradient">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Alarm_title"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/colorWhite"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_above="@+id/btn_cofnij">
+
+    <RelativeLayout
+        android:paddingTop="0dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:isScrollContainer="true"
+        android:minHeight="420dp"
+        android:verticalScrollbarPosition="right"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Data budzenia"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/dateStarLabel"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/LinearLayout2"
+            android:layout_below="@id/dateStarLabel"
+            android:layout_centerHorizontal="true" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:hint="Kliknij aby wybrac date"
+            android:focusable="false"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/edittext_layout"
+            android:id="@+id/textView3"
+            android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+        <TimePicker
+            android:layout_below="@id/LinearLayout2"
+            android:id="@+id/time_picker1"
+            android:layout_width="match_parent"
+            android:timePickerMode="spinner"
+            android:layout_height="180dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_picker1"
+            android:layout_centerHorizontal="true"
+            android:text="Wybierz urządzenie:"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/dateStarLabel2"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/LinearLayout21"
+            android:layout_below="@id/dateStarLabel2"
+            android:layout_centerHorizontal="true" >
+
+            <EditText
+                android:id="@+id/textView4"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_layout"
+                android:drawable="@drawable/ic_dashboard_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="true"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:hint="Wybierz urzadzenie"
+                android:textColor="@color/colorBlack"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switch1"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLayout21"
+            android:layout_alignEnd="@+id/time_picker1"
+            android:switchMinWidth="25dp"
+            android:switchPadding="10dp"
+            android:text="Powtarzaj alarm" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch1"
+        android:id="@+id/LinearLayout1"
+        android:layout_marginBottom="35dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poniedziałek"
+            android:id="@+id/Pon"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wtorek"
+            android:id="@+id/Wt"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Środa"
+            android:id="@+id/Sr"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Czwartek"
+            android:id="@+id/Czw"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Piątek"
+            android:id="@+id/Pt"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sobota"
+            android:id="@+id/Sb"
+            />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Niedziela"
+            android:id="@+id/Nd"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Data zakończenia"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/dateEndLabe"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/LinearLayout"
+            android:layout_below="@id/dateEndLabe">
+
+            <EditText
+                android:id="@+id/textView5"
+                android:drawable="@drawable/ic_dashboard_black_24dp"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:focusable="false"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_layout"
+                android:layout_height="38dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:hint="Kliknij aby wybrac date"
+                android:textColor="@color/colorBlack"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_dodaj_alarm"
+            android:layout_margin="11dp"
+            android:textSize="16sp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button_gradient2_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Dodaj"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</ScrollView>
+    <FrameLayout
+        android:id="@+id/fragment_container_addDev"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp">
+    </FrameLayout>
+
+    <Button
+        android:elevation="0dp"
+        android:id="@+id/btn_cofnij"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_gradient2_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Wróć" />
+
+
+
+</RelativeLayout>

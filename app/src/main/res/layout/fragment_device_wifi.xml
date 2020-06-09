@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Device.Model.DeviceWifi"
+    android:background="@drawable/bakground_gradient">
+
+    <ImageView
+        android:contentDescription="@string/image"
+        android:id="@+id/Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/camerapreview"
+        android:alpha="0.1"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/QRScan"
+        android:textSize="30sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/camerapreview"
+        android:textColor="@color/colorWhite"/>
+    <ImageView
+        android:contentDescription="@string/image"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_camera_alt_white_48dp"/>
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/camerapreview"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+    <LinearLayout
+        android:id="@+id/LinearLayoutSSID"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="300dp"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <EditText
+            android:autofillHints="SSID sieci wifi"
+            android:id="@+id/et_wifi_ssid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="SSID sieci wifi"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:inputType="textEmailAddress"
+            android:layout_above="@id/et_password"
+            android:background="@drawable/edittext_layout"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_wifi_ssid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gradient"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Prześlij"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayoutPass"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="300dp"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <EditText
+            android:autofillHints="Hasło wifi"
+            android:id="@+id/et_wifi_pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Hasło wifi"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_layout"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_wifi_pass_sent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gradient"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Prześlij"/>
+
+    </LinearLayout>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/start_num"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginStart="32dp"-->
+    <!--        android:layout_below="@id/imageView"-->
+    <!--        android:textColor="@color/colorWhite"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:text="Projket wykonali:\n\nMichal Borkowski\nTomasz Fałdrowicz\nLukasz Wakenski\nKamil Szczepanik\n\n\nPJATK\nGdansk, 2020r." />-->
+
+    <TextView
+        android:id="@+id/cam_serialnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kod znajduje się na jednym z boków urządzenia"
+        android:textSize="14sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/camerapreview"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/MACwifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/cam_serialnum"
+        android:textColor="@color/colorWhite"/>
+
+
+    <Button
+        android:id="@+id/btn_cofnij3"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_gradient2_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Wróć" />
+
+
+</RelativeLayout>

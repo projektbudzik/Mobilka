@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_log_reg.userRegisterFragment"
+    android:background="@drawable/bakground_gradient"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:alpha="0.1"
+        android:contentDescription="@string/image"
+        android:src="@drawable/logo"
+      />
+    <TextView
+        android:id="@+id/tv_title_lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_lvl"
+        android:textSize="50sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="@color/colorWhite"
+        android:drawableStart="@drawable/ic_person_white_24dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/tv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/register"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/user_tag"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:clickable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:autofillHints="Login"
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                 android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_layout"
+                android:hint="Nazwa użytkownika"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/valid_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="15dp"
+                android:text="Nazwa powinna zawierać od 3 do 20 znaków"
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+            <EditText
+                android:autofillHints="Email"
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_layout"
+                android:hint="@string/e_mail"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/valid_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="15dp"
+                android:text="Wprowadzony email jest nieprawidłowy"
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:autofillHints="Password"
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_layout"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/valid_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="15dp"
+                android:text="Hasło powinno zawierać od 8 do 20 znaków"
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:autofillHints="Repeat_password"
+                android:id="@+id/et_repassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_layout"
+                android:hint="@string/re_type_password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/valid_repassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="15dp"
+                android:text="Wprowadzone hasła różnią się"
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/button_gradient"
+                android:text="@string/register" />
+        </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusableInTouchMode="true">
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_above="@id/swipeLeft"
+                    android:layout_alignStart="@+id/swipeLeft"
+                    android:layout_alignEnd="@+id/swipeLeft"
+                    android:background="@drawable/button_gradient"
+                    android:text="cofnij" />
+
+
+                <TextView
+                    android:id="@+id/swipeLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/swipe_right_for_login"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+</RelativeLayout>

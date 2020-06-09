@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/alarm_Linear">
+
+            <TextView
+                android:drawableTop="@drawable/ic_access_alarm_black_24dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvID"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="(256)"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/alarm_Linear">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data alarmu:"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvDateStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23.02.2020"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LinDataEnd">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powtarzaj do:"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvDateEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23.02.2020"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Godzina:"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="07:30"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Użytkownik:"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jacio"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LinSekwencja">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sekwencja:"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvSekwencja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pon, Wt, Czw"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urządzenie:"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tvDevice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+48535793373"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true">
+
+        <Button
+            android:layout_height="35dp"
+            android:layout_width="65dp"
+            android:id="@+id/btn_usunAlarm"
+            android:background="@drawable/button_gradient2_red"
+            android:textColor="@color/colorWhite"
+            android:text="Usuń"/>
+
+        <Button
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="65dp"
+            android:id="@+id/btn_editAlarm"
+            android:background="@drawable/button_gradient2_yellow"
+            android:textColor="@color/colorBlack"
+            android:text="Edytuj"/>
+    </LinearLayout>
+
+</RelativeLayout>
